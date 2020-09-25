@@ -1,0 +1,67 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            160
+        ],
+        "no-restricted-syntax": [
+            "off",
+            "ForInStatement"
+        ],
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowTernary": true
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allow": [
+                "_id",
+                "_rev"
+                ]
+            }
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "vue/html-indent": [ "error", 4 ],
+        "react/prop-types": "off",
+        "strict": "off",
+        "indent": [ "error", 4 ],
+        "import/newline-after-import": "off",
+        "comma-dangle": "off",
+        "no-new": "off",
+        "array-bracket-spacing": "off",
+        "vue/max-attributes-per-line": "off",
+        "import/no-unresolved": "off",
+        "no-plusplus": "off",
+        "import/extensions": "off",
+        "no-restricted-globals": "off"
+    }
+}
