@@ -54,7 +54,7 @@ const basicConfig = {
 const configs = [
     Object.assign({}, basicConfig, {
         name: 'User',
-        entry: [ path.join(__dirname, 'client', 'src', 'app.js'), 'webpack-hot-middleware/client?name=lojatemdetudo' ],
+        entry: [ path.join(__dirname, 'client', 'src', 'app.js')],
         output: {
             publicPath: '',
             path: path.join(__dirname, 'client', 'dist'),
